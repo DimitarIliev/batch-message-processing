@@ -5,7 +5,7 @@ using Azure.Messaging.ServiceBus;
 string connectionString = "<NAMESPACE CONNECTION STRING>";
 
 // name of your Service Bus topic
-string topicName = "<TOPIC NAME>";
+string topicName = "bulk-message";
 
 // the client that owns the connection and can be used to create senders and receivers
 ServiceBusClient client;
