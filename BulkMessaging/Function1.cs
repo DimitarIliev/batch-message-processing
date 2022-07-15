@@ -7,14 +7,14 @@ namespace BulkMessaging
     public class Function1
     {
         private readonly ILogger<Function1> _logger;
-        
+
         public Function1(ILogger<Function1> log)
         {
             _logger = log;
         }
 
         [FunctionName("ProcessBulkMessages")]
-        public void Run([ServiceBusTrigger("bulk-message", "ConsoleSubscription", Connection = "connectionstring")]string[] mySbMsg)
+        public void Run([ServiceBusTrigger("bulk-message", "ConsoleSubscription", Connection = "connectionstring")] string[] mySbMsg)
         {
             foreach (var item in mySbMsg)
             {
