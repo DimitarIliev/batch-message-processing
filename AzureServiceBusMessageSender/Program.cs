@@ -14,7 +14,7 @@ ServiceBusClient client;
 ServiceBusSender sender;
 
 // number of messages to be sent to the topic
-const int numOfMessages = 3;
+const int numOfMessages = 5;
 
 
 // The Service Bus client types are safe to cache and use as a singleton for the lifetime
