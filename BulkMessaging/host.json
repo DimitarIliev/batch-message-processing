@@ -15,7 +15,7 @@
         "maxConcurrentSessions": 16
       },
       "batchOptions": {
-        "maxMessageCount": 5,
+        "maxMessageCount": 3,
         "operationTimeout": "00:01:00",
         "autoComplete": true
       }
