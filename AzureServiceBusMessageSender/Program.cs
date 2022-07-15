@@ -2,10 +2,10 @@
 using Azure.Messaging.ServiceBus;
 
 // connection string to your Service Bus namespace
-string connectionString = "Endpoint = sb://bulkmessaging.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=Wzdy2A9h5UqM/vtlvIYXhcIardkTG0dsMOo96XZR6Z4="; //"<NAMESPACE CONNECTION STRING>";
+string connectionString = "<NAMESPACE CONNECTION STRING>";
 
 // name of your Service Bus topic
-string topicName = "bulk-message";//"<TOPIC NAME>";
+string topicName = "<TOPIC NAME>";
 
 // the client that owns the connection and can be used to create senders and receivers
 ServiceBusClient client;
