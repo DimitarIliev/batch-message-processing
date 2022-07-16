@@ -1,21 +1,18 @@
 ﻿using Azure.Messaging.ServiceBus;
 
-string connectionString = "<NAMESPACE CONNECTION STRING>";
-
-string topicName = "bulk-message";
+var connectionString = "<NAMESPACE CONNECTION STRING>";
+var topicName = "bulk-message";
+var nmMessages = 3;
 
 ServiceBusClient client;
-
 ServiceBusSender sender;
-
-const int numOfMessages = 3;
 
 client = new ServiceBusClient(connectionString);
 sender = client.CreateSender(topicName);
 
 using ServiceBusMessageBatch messageBatch = await sender.CreateMessageBatchAsync();
 
-for (int i = 1; i <= numOfMessages; i++)
+for (int i = 1; i <= nmMessages; i++)
 {
     if (!messageBatch.TryAddMessage(new ServiceBusMessage($"Message {i}")))
     {
@@ -26,7 +23,7 @@ for (int i = 1; i <= numOfMessages; i++)
 try
 {
     await sender.SendMessagesAsync(messageBatch);
-    Console.WriteLine($"A batch of {numOfMessages} messages has been published to the topic.");
+    Console.WriteLine($"A batch of {nmMessages} messages has been published to the topic: {topicName}.");
 }
 finally
 {
@@ -34,5 +31,5 @@ finally
     await client.DisposeAsync();
 }
 
-Console.WriteLine("Press any key to end the application");
+Console.WriteLine("Press any key exit...");
 Console.ReadKey();
