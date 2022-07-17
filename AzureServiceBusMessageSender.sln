@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureServiceBusMessageSender", "AzureServiceBusMessageSender\AzureServiceBusMessageSender.csproj", "{93DB7314-E1FF-462E-86D2-C2EA36B22452}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureServiceBusMessageSender", "AzureServiceBusMessageSender\AzureServiceBusMessageSender.csproj", "{93DB7314-E1FF-462E-86D2-C2EA36B22452}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BulkMessaging", "BulkMessaging\BulkMessaging.csproj", "{BC2A8FF4-FA9A-4C8F-A858-F430E9E0AF32}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BatchMessaging", "BulkMessaging\BatchMessaging.csproj", "{BC2A8FF4-FA9A-4C8F-A858-F430E9E0AF32}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
