@@ -2,7 +2,7 @@ using System;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Extensions.Logging;
 
-namespace BulkMessaging
+namespace BatchMessaging
 {
     public class Function1
     {
